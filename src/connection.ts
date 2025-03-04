@@ -2572,7 +2572,7 @@ const GetBlockSignaturesRpcResult = jsonRpcResult(
 /**
  * Expected JSON RPC response for the "getTransaction" message
  */
-const GetTransactionRpcResult = jsonRpcResult(
+export const GetTransactionRpcResult = jsonRpcResult(
   nullable(
     pick({
       slot: number(),
@@ -2587,7 +2587,7 @@ const GetTransactionRpcResult = jsonRpcResult(
 /**
  * Expected parsed JSON RPC response for the "getTransaction" message
  */
-const GetParsedTransactionRpcResult = jsonRpcResult(
+export const GetParsedTransactionRpcResult = jsonRpcResult(
   nullable(
     pick({
       slot: number(),
